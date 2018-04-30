@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Templates</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+<body>
+
+<h1>Hello Spring</h1>
+
+<p>This site was built by <span th:text="${author}"></span></p>
+
+<p>Favorite Foods</p>
+
+<ul>
+    <li th:each="food : ${favoriteFoods}" th:text="${food}"></li>
+</ul>
+
+<h2>Elephant picture</h2>
+<img src="../img/elephant.jpg">
+</body>
+</html>
